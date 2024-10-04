@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<empleados
+<empleado id="111">
+    <nombre>Marc</nombre>
+    <apellidos>Zuckenberg</apellidos>
+    <ciudad>Florida</ciudad>
+</empleado>
+<empleado id="222">
+    <nombre>Jeff</nombre>
+    <apellidos>Bezos</apellidos>
+    <ciudad>NY</ciudad>
+</empleado>
+<empleado id="333">
+    <nombre>David</nombre>
+    <apellidos>Hasseloff</apellidos>
+    <ciudad>Alcorcon</ciudad>
+</empleado>
+</empleados>

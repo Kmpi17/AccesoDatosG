@@ -1,0 +1,6 @@
+#Fichero de configuracíon
+#Mon Sep 23 13:00:46 CEST 2024
+password=password
+puerto\ =3306
+servidor=goldengate.tk
+user=root

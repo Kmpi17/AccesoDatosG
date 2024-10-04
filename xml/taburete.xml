@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<taburete>
+<tabure id="111">
+    <diseño>Steet Fighter</diseño>
+    <basepie>acero cromado</basepie>
+    <reposapies>cromado</reposapies>
+    <proteccion>antideslizante</proteccion>
+    <calidad>alta</calidad>
+    <asiento>acolchado</asiento>
+    <altura>63-84 cm</altura>
+    <asientoT>35 cm</asientoT>
+    <baseT>39 cm</baseT>
+    <distanciaRA>43 cm</distanciaRA>
+    <pieT>6 cm</pieT>
+    <peso>4,8 kg</peso>
+    <material>cuero , acero , plastico y tela</material>
+</tabure>
+
+<tabure id="222">
+    <diseño>Mario Bros</diseño>
+    <basepie>acero cromado</basepie>
+    <reposapies>cromado</reposapies>
+    <proteccion>antideslizante</proteccion>
+    <calidad>alta</calidad>
+    <asiento>acolchado</asiento>
+    <altura>63-84 cm</altura>
+    <asientoT>35 cm</asientoT>
+    <baseT>39 cm</baseT>
+    <distanciaRA>43 cm</distanciaRA>
+    <pieT>6 cm</pieT>
+    <peso>4,8 kg</peso>
+    <material>cuero , acero , plastico y tela</material>
+</tabure>
+
+<tabure id="333">
+    <diseño>Donkey Kong</diseño>
+    <basepie>acero cromado</basepie>
+    <reposapies>cromado</reposapies>
+    <proteccion>antideslizante</proteccion>
+    <calidad>alta</calidad>
+    <asiento>acolchado</asiento>
+    <altura>63-84 cm</altura>
+    <asientoT>35 cm</asientoT>
+    <baseT>39 cm</baseT>
+    <distanciaRA>43 cm</distanciaRA>
+    <pieT>6 cm</pieT>
+    <peso>4,8 kg</peso>
+    <material>cuero , acero , plastico y tela</material>
+</tabure>
+
+</taburete>
