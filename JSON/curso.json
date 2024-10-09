@@ -1,0 +1,14 @@
+{
+    "curso": [{
+            "horaS": 6,
+            "id": 1,
+            "nombre": "Acceso a datos",
+            "nota": 8.45
+        }, {
+            "horaS": 4,
+            "id": 2,
+            "nombre": "PSP",
+            "nota": 9
+        }],
+    "nombre": "DAM 24/25"
+}
