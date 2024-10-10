@@ -54,6 +54,14 @@ public class Personaje {
     public void setPeliculas(ArrayList<Peliculas> peliculas) {
         this.peliculas = peliculas;
     }
+
+    public boolean add(Especies e) {
+        return especies.add(e);
+    }
+
+    public boolean add(Peliculas e) {
+        return peliculas.add(e);
+    }
     
     
     
