@@ -40,7 +40,7 @@ public class Principal {
         jsonCurso.put("curso",jsonModulos);
         
         try{
-            java.nio.file.Files.write(java.nio.file.Paths.get("curso.json"), jsonModulo.toString().getBytes());
+            java.nio.file.Files.write(java.nio.file.Paths.get("curso.json"),jsonModulos.toString().getBytes());
         }catch(java.io.IOException e){
             e.printStackTrace();
         }
