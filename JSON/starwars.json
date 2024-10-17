@@ -19,10 +19,7 @@
             "name": "Human", 
             "classification": "mammal", 
             "designation": "sentient", 
-            "average_height": "180", 
-            "skin_colors": "caucasian, black, asian, hispanic", 
-            "hair_colors": "blonde, brown, black, red",  
-            "average_lifespan": "120", 
-            "language": "Galactic Basic"}
+            "average_height": "180" 
+          }
 	]
 }
