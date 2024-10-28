@@ -70,9 +70,19 @@ public class Principal {
             
             if (eleccion==0) {
                 
-                JSONArray guardarPersonaje =new JSONArray();
+                JSONArray guardarPersonajes =new JSONArray();
                 for (Persona p2:listaPersona) {
-                    
+                    JSONObject guardarPersonaje=new JSONObject();
+                    guardarPersonaje.put("nombre",p2.getNombre());
+                    guardarPersonaje.put("altura", p2.getAltura());
+                    JSONArray guardarPeliculas = new JSONArray();
+                    for (Peliculas pe2:p2.getPeliculas()) {
+                        JSONObject objetoPelicula=new JSONObject();
+                        objetoPelicula.put("titulo", pe2.getTitulo());
+                        objetoPelicula.put("id_episodio",pe2.getEpisodio_id());
+                        objetoPelicula.put("opening", pe2.getOpening());
+                        objetoPelicula.put("director", pe2.getOpening());
+                    }
                 }
                 
             }
