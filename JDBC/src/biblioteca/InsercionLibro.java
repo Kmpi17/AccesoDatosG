@@ -93,8 +93,8 @@ public class InsercionLibro {
     }
 
     private static boolean existeAutor(String nombreAutor, Connection con) throws SQLException {
-        System.out.println("EntraAutor");
-        String sentenciaAutor = "SELECT * FROM autor WHERE NombreAutor='"+nombreAutor+"'";
+        System.out.println("ExisteAutor");
+        String sentenciaAutor = "SELECT * FROM autor WHERE NombreAutor='" + nombreAutor + "'";
         ResultSet sentenciaSelect = con.createStatement().executeQuery(sentenciaAutor);
         if (!sentenciaSelect.next()) {
             return false;
