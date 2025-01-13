@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-nov-2024 10:00:38 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="biblioteca" name="Prestamo" optimistic-lock="version" table="prestamo">
+    <id name="idPrestamo" type="java.lang.Integer">
+      <column name="idPrestamo"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="Libro" fetch="select" name="libro">
+      <column name="idLibro" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="Socio" fetch="select" name="socio">
+      <column name="idSocio" not-null="true"/>
+    </many-to-one>
+    <property name="fechaPrestamo" type="date">
+      <column length="10" name="FechaPrestamo" not-null="true"/>
+    </property>
+    <property name="fechaEntrega" type="date">
+      <column length="10" name="FechaEntrega" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-nov-2024 10:00:38 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="biblioteca" name="Autor" optimistic-lock="version" table="autor">
+    <id name="idAutor" type="java.lang.Integer">
+      <column name="idAutor"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nombreAutor" type="string">
+      <column length="60" name="NombreAutor" not-null="true"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="libros" table="libro">
+      <key>
+        <column name="idAutor" not-null="true"/>
+      </key>
+      <one-to-many class="Libro"/>
+    </set>
+  </class>
+</hibernate-mapping>

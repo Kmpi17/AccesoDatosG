@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-nov-2024 10:00:38 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="biblioteca" name="Libro" optimistic-lock="version" table="libro">
+    <id name="idLibro" type="java.lang.Integer">
+      <column name="idLibro"/>
+      <generator class="identity"/>
+    </id>
+    <many-to-one class="Autor" fetch="select" name="autor">
+      <column name="idAutor" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="Editorial" fetch="select" name="editorial">
+      <column name="idEditorial" not-null="true"/>
+    </many-to-one>
+    <many-to-one class="Tema" fetch="select" name="tema">
+      <column name="idTema" not-null="true"/>
+    </many-to-one>
+    <property name="isbn" type="string">
+      <column length="20" name="ISBN" not-null="true" unique="true"/>
+    </property>
+    <property name="titulo" type="string">
+      <column length="65" name="Titulo" not-null="true"/>
+    </property>
+    <property name="numeroEjemplares" type="byte">
+      <column name="NumeroEjemplares" not-null="true"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="prestamos" table="prestamo">
+      <key>
+        <column name="idLibro" not-null="true"/>
+      </key>
+      <one-to-many class="Prestamo"/>
+    </set>
+  </class>
+</hibernate-mapping>

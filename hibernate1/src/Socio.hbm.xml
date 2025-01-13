@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04-nov-2024 10:00:38 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="biblioteca" name="Socio" optimistic-lock="version" table="socio">
+    <id name="idSocio" type="java.lang.Integer">
+      <column name="idSocio"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nombreCompleto" type="string">
+      <column length="60" name="NombreCompleto" not-null="true"/>
+    </property>
+    <property name="direccion" type="string">
+      <column length="100" name="Direccion" not-null="true"/>
+    </property>
+    <property name="correo" type="string">
+      <column length="25" name="Correo"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="15" name="Telefono" not-null="true"/>
+    </property>
+    <property name="foto" type="string">
+      <column length="20" name="Foto" not-null="true"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="prestamos" table="prestamo">
+      <key>
+        <column name="idSocio" not-null="true"/>
+      </key>
+      <one-to-many class="Prestamo"/>
+    </set>
+  </class>
+</hibernate-mapping>

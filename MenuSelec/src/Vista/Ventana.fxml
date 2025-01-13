@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="PanelPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="985.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaController">
+   <children>
+      <Pane layoutX="42.0" layoutY="98.0" prefHeight="487.0" prefWidth="902.0" style="-fx-background-color: gray;">
+         <children>
+            <TextField fx:id="nombre" layoutX="16.0" layoutY="109.0" promptText="NOMBRE" />
+            <TextField fx:id="nivel" layoutX="16.0" layoutY="54.0" prefHeight="25.0" prefWidth="149.0" promptText="NIVEL" />
+            <TextField fx:id="genero" layoutX="16.0" layoutY="161.0" promptText="GENERO" />
+            <TextField fx:id="claseIncial" layoutX="16.0" layoutY="219.0" promptText="CLASE INICIAL" />
+            <Button layoutX="16.0" layoutY="286.0" mnemonicParsing="false" onAction="#crearPersonaje" prefHeight="36.0" prefWidth="149.0" text="INSERTAR" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="487.0" fitWidth="383.0" layoutX="572.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/SAMURAI.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="532.0" fitWidth="366.0" layoutX="197.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/menu.PNG" />
+               </image>
+            </ImageView>
+            <Pane layoutX="154.0" layoutY="-66.0" prefHeight="50.0" prefWidth="39.0" />
+            <Pane layoutX="191.0" layoutY="-3.0" prefHeight="491.0" prefWidth="7.0" style="-fx-background-color: black;" />
+            <Pane layoutX="560.0" layoutY="-1.0" prefHeight="491.0" prefWidth="7.0" style="-fx-background-color: black;" />
+         </children>
+      </Pane>
+      <Pane layoutX="42.0" layoutY="31.0" prefHeight="67.0" prefWidth="902.0" style="-fx-background-color: #970404;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="902.0" text="ELDEN RING" textAlignment="CENTER">
+               <font>
+                  <Font name="Candara Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>
